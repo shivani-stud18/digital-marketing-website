@@ -7,6 +7,8 @@
 html,body{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+
 }
 .container{
     background-color: #0f0f0f;
@@ -32,14 +34,13 @@ nav{
     z-index:100;
 }
 nav img{
-    width: 140px;
+    width: 120px;
     height: auto;
 }
 #nav-part2{
     display:flex;
     align-items:center;
     gap:20px;
-    z-index:99;
 }
 #nav-part2 a{
     text-decoration: none;
@@ -68,30 +69,4 @@ nav img{
     background:white;
     display:block;
 }
-@media (max-width:768px){
 
-    nav{
-        padding:20px 30px;
-    }
-
-    #menu-btn{
-        display:flex;
-    }
-
-    #nav-part2{
-        position:absolute;
-        top:80px;
-        right:-100%;
-        flex-direction:column;
-        background:#111;
-        width:200px;
-        padding:30px;
-        transition:0.4s;
-        gap: 20px;
-    }
-
-    #nav-part2.active{
-        right:0;
-    }
-
-}
